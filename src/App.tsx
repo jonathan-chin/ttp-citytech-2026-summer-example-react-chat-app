@@ -35,9 +35,11 @@ const App = () => {
             const new_message = event.target.incoming_text.value;
 
             // add the new message to the message state
+            // @ts-expect-error
             setMessages([...messages, new_message]);
 
             // note: this is not best practice in react but it works for now
+            // @ts-expect-error
             document.getElementById('incoming_text').value = '';
         }}>
         <input name='incoming_text' id='incoming_text' />
