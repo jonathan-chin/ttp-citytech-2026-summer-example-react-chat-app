@@ -5,7 +5,8 @@ import './App.css';
 
 const App = () => {
     const [messages, setMessages] = useState([]);
-
+    // this is a comment
+    /* this is another comment */
     return <>
         <h1>
             Chatroom
@@ -52,6 +53,12 @@ const App = () => {
                 send
             </button>
         </form>
+        // this is an example of using the onClick handler
+        <button onClick={() => {
+            alert('hello');
+        }}>
+            click me
+        </button>
     </>;
 }
 
